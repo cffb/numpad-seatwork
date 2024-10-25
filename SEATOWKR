@@ -1,0 +1,91 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package seatwork;
+
+import javax.swing.*;
+import java.awt.*;
+
+
+//NOTE: PUT GRAPH PAPER LAYOUT AND CHANGE PULIC CLASS AND PACKEAGE NAME
+
+
+public class Seatworkb2 {
+   JFrame frame;
+   JButton one;
+   JButton two;
+   JButton three;
+   JButton four;
+   JButton five;
+   JButton six;
+   JButton seven;
+   JButton eight;
+   JButton nine;
+   JButton zero;
+   
+   
+   JButton numlock;
+   JButton slash;
+   JButton aste;
+   JButton minus;
+   JButton plus;
+   JButton enter;
+   JButton dot;
+   
+    
+    public Seatworkb2(){
+        frame=new JFrame();
+        one = new JButton("1"); 
+        two = new JButton("2"); 
+        three = new JButton("3"); 
+        four = new JButton("4"); 
+        five = new JButton("5"); 
+        six = new JButton("6"); 
+        seven = new JButton("7"); 
+        eight = new JButton("8"); 
+        nine = new JButton("9"); 
+        zero = new JButton("0");
+        
+        numlock = new JButton("Num Lock"); 
+        slash = new JButton("/"); 
+        aste = new JButton("*"); 
+        minus = new JButton("-"); 
+        plus = new JButton("+"); 
+        enter = new JButton("Enter"); 
+        dot = new JButton("."); 
+        
+    }
+    
+    public void setFrame(){
+        frame.setLayout(new GraphPaperLayout(new Dimension(8,10)));
+        frame.add(one, new Rectangle(0,6,2,2));
+        frame.add(two, new Rectangle(2,6,2,2));
+        frame.add(three, new Rectangle(4,6,2,2));
+        frame.add(four, new Rectangle(0,4,2,2));
+        frame.add(five, new Rectangle(2,4,2,2));
+        frame.add(six, new Rectangle(4,4,2,2));
+        frame.add(seven, new Rectangle(0,2,2,2));
+        frame.add(eight, new Rectangle(2,2,2,2));
+        frame.add(nine, new Rectangle(4,2,2,2));
+        
+        frame.add(numlock, new Rectangle(0,0,2,2));
+        frame.add(slash, new Rectangle(2,0,2,2));
+        frame.add(aste, new Rectangle(4,0,2,2));
+        frame.add(minus, new Rectangle(6,0,2,2));
+        frame.add(plus, new Rectangle(6,2,2,4));
+        frame.add(enter, new Rectangle(6,6,2,4));
+        frame.add(dot, new Rectangle(4,8,2,2));
+        frame.add(zero, new Rectangle(0,8,4,2));
+        
+        
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(frame.DISPOSE_ON_CLOSE);
+        frame.setSize(300,300);
+    }
+    
+    public static void main(String[] args){
+        Seatworkb2 x=new Seatworkb2();
+        x.setFrame();
+    }   
+}
